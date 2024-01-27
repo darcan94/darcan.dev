@@ -5,15 +5,17 @@ import Home from '../components/Home.astro';
 import Resume from '../components/Resume.astro';
 import Layout from '../layouts/Layout.astro';
 import Portfolio from '../components/Portfolio.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="Darcan dev">
 	<main>
+		<Header />
 		<Home />
 		<About />
 		<Resume />
-		<Contact />
 		<Portfolio />
+		<Contact />
 	</main>
 </Layout>
 

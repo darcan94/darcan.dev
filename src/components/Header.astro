@@ -1,0 +1,56 @@
+---
+const navItems = [
+    {
+        title: 'Home',
+        label: 'home',
+        link: '/#home'
+    },
+    {
+        title: 'About',
+        label: 'about',
+        link: '/#about'
+    },
+    {
+        title: 'Resume',
+        label: 'resume',
+        link: '/#resume'
+    },
+    {
+        title: 'Portfolio',
+        label: 'portfolio',
+        link: '/#portfolio'
+    },
+    {
+        title: 'Contact',
+        label: 'contact',
+        link: '/#contact'
+    }
+];
+---
+<header>
+    <nav>
+        {
+            navItems.map(item => (
+                <a href={item.link} aria-label={item.label}>
+                    {item.title}
+                </a>
+            ))
+        }
+    </nav>
+</header>
+
+<style>
+    header{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 50px;
+    }
+    nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
