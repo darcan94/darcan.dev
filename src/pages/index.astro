@@ -11,16 +11,18 @@ import Header from '../components/Header.astro';
 <Layout title="Darcan dev">
 	<main>
 		<Header />
-		<Home />
-		<About />
-		<Resume />
-		<Portfolio />
-		<Contact />
+		<div class="article_container">
+			<Home />
+			<About />
+			<Resume />
+			<Portfolio />
+			<Contact />
+		</div>
 	</main>
 </Layout>
 
 <style>
-	main {
+	.article_container {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
